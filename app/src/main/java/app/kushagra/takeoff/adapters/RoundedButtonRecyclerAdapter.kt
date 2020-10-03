@@ -15,7 +15,8 @@ import com.bumptech.glide.Glide
 class RoundedButtonRecyclerAdapter(
 
     private var dataList: ArrayList<QuickDataModel>,
-    private var context: Context
+    private var context: Context,
+    private var listener: Click
 ) :
     RecyclerView.Adapter<RoundedButtonRecyclerAdapter.ViewHolder>() {
 
@@ -41,7 +42,12 @@ class RoundedButtonRecyclerAdapter(
         holder.image.setBackgroundColor(dataItem.background!!)
         holder.title.text = dataItem.title
         Glide.with(context).load(dataItem.image).into(holder.image)
+        holder.layout.setOnClickListener {
+            listener.onClick(dataItem)
+        }
+    }
 
-
+    interface Click{
+        fun onClick(item:QuickDataModel)
     }
 }

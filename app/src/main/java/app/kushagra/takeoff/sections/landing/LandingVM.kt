@@ -16,7 +16,7 @@ class LandingVM : BaseViewModel() {
 
         dataArrayList.add(QuickDataModel(
             "Services",
-            context.resources.getDrawable(R.drawable.ic_013_crown),
+            context.resources.getDrawable(R.drawable.ic_025_happy),
             ContextCompat.getColor(context,R.color.btn_login_twitter),
             1
             )

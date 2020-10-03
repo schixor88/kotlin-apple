@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="app.kushagra.takeoff">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,8 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".web.WebViewActivity"></activity>
-        <!-- Base Activity -->
+        <activity android:name=".sections.doctor.DoctorActivity"></activity>
+        <activity android:name=".sections.pricing.PricingActivity" />
+        <activity android:name=".web.WebViewActivity" /> <!-- Base Activity -->
         <activity
             android:name=".base.BaseActivity"
             android:screenOrientation="portrait" /> <!-- ========================= -->
@@ -30,7 +31,7 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".sections.MainActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
