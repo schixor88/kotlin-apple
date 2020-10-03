@@ -11,9 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="app.kushagra.appledental.sections.doctor.DoctorActivity"></activity>
-        <activity android:name="app.kushagra.appledental.sections.pricing.PricingActivity" />
-        <activity android:name="app.kushagra.appledental.web.WebViewActivity" /> <!-- Base Activity -->
+        <activity android:name="app.kushagra.appledental.sections.doctor.DoctorActivity" android:screenOrientation="portrait"/>
+        <activity android:name="app.kushagra.appledental.sections.pricing.PricingActivity" android:screenOrientation="portrait" />
+        <activity android:name="app.kushagra.appledental.web.WebViewActivity" android:screenOrientation="portrait"/> <!-- Base Activity -->
         <activity
             android:name="app.kushagra.appledental.base.BaseActivity"
             android:screenOrientation="portrait" /> <!-- ========================= -->
