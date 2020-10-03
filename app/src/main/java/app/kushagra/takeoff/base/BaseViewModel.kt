@@ -3,7 +3,7 @@ package app.kushagra.takeoff.base
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class BaseViewModel : ViewModel() {
+abstract class BaseViewModel : ViewModel() {
 
     val inProgress by lazy { MutableLiveData<Boolean>() }
     val error by lazy { MutableLiveData<Throwable>() }
