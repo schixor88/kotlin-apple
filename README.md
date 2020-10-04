@@ -1,5 +1,9 @@
-# kotlin-apple
+# Dental Clinic Information (Kotlin)
 Experimental Android App for Dental Clinic. Fully static initially.
+
+## Application Pattern / Architecture derived from
+[MVVM Kotlin](https://github.com/schixor88/take-off-kotlin)
+Repo is yet to be finalized, but is usable
 
 ## Plans
 - MERN Backend Web App
