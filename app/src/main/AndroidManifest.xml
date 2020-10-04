@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="app.kushagra.takeoff">
+    package="app.kushagra.appledental">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -11,14 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".sections.doctor.DoctorActivity"></activity>
-        <activity android:name=".sections.pricing.PricingActivity" />
-        <activity android:name=".web.WebViewActivity" /> <!-- Base Activity -->
+        <activity android:name="app.kushagra.appledental.sections.doctor.DoctorActivity" android:screenOrientation="portrait"/>
+        <activity android:name="app.kushagra.appledental.sections.pricing.PricingActivity" android:screenOrientation="portrait" />
+        <activity android:name="app.kushagra.appledental.web.WebViewActivity" android:screenOrientation="portrait"/> <!-- Base Activity -->
         <activity
-            android:name=".base.BaseActivity"
+            android:name="app.kushagra.appledental.base.BaseActivity"
             android:screenOrientation="portrait" /> <!-- ========================= -->
         <activity
-            android:name=".sections.splash.SplashActivity"
+            android:name="app.kushagra.appledental.sections.splash.SplashActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,10 +27,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".sections.landing.LandingActivity"
+            android:name="app.kushagra.appledental.sections.landing.LandingActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".sections.MainActivity"
+            android:name="app.kushagra.appledental.sections.MainActivity"
             android:screenOrientation="portrait" />
     </application>
 
